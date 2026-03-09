@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BRAV.ID — Marketing, Consulting & Advertising</title>
+    <meta name="description" content="Consultoria e agência de marketing que conecta estratégia, identidade e execução para gerar crescimento de negócio." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body class="antialiased">
+    <nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <span class="font-heading text-xl font-bold tracking-wider text-foreground">BRAV<span class="text-primary">.ID</span></span>
+
+        <ul class="hidden md:flex gap-8" id="desktop-nav">
+          <li><button class="nav-link text-sm font-body tracking-wide text-muted-foreground hover:text-primary" data-target="home">Home</button></li>
+          <li><button class="nav-link text-sm font-body tracking-wide text-muted-foreground hover:text-primary" data-target="sobre">Sobre</button></li>
+          <li><button class="nav-link text-sm font-body tracking-wide text-muted-foreground hover:text-primary" data-target="servicos">Serviços</button></li>
+          <li><button class="nav-link text-sm font-body tracking-wide text-muted-foreground hover:text-primary" data-target="time">Time</button></li>
+          <li><button class="nav-link text-sm font-body tracking-wide text-muted-foreground hover:text-primary" data-target="contato">Contato</button></li>
+        </ul>
+
+        <button id="mobile-toggle" class="md:hidden text-foreground">☰</button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+        <ul class="flex flex-col items-center py-6 gap-6">
+          <li><button class="nav-link text-base font-body text-muted-foreground hover:text-primary" data-target="home">Home</button></li>
+          <li><button class="nav-link text-base font-body text-muted-foreground hover:text-primary" data-target="sobre">Sobre</button></li>
+          <li><button class="nav-link text-base font-body text-muted-foreground hover:text-primary" data-target="servicos">Serviços</button></li>
+          <li><button class="nav-link text-base font-body text-muted-foreground hover:text-primary" data-target="time">Time</button></li>
+          <li><button class="nav-link text-base font-body text-muted-foreground hover:text-primary" data-target="contato">Contato</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
+          <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+          <img src="./assets/bravid-logo.jpg" alt="" class="w-[500px] h-[500px] object-contain" />
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center">
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-heading font-black tracking-tight text-foreground mb-6 animate-fade-in-up">
+            YOUR CHALLENGE.<br>
+            <span class="text-primary">OUR BUSINESS.</span>
+          </h1>
+          <p class="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground font-body mb-10 animate-fade-in-up" style="animation-delay:0.2s">
+            Consultoria e agência de marketing que conecta estratégia, identidade e execução para gerar crescimento de negócio.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style="animation-delay:0.4s">
+            <button data-target="contato" class="btn px-8 py-4 bg-primary text-primary-foreground font-heading font-semibold text-sm tracking-wider rounded hover:opacity-90 transition-opacity">Fale com a BRAV.ID</button>
+            <button data-target="servicos" class="btn px-8 py-4 border border-foreground text-foreground font-heading font-semibold text-sm tracking-wider rounded hover:bg-foreground hover:text-background transition-colors">Conheça nossos serviços</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section loaded from partial -->
+      <div data-include="partials/sobre.html"></div>
+
+      <!-- Services section loaded from partial -->
+      <div data-include="partials/servicos.html"></div>
+
+      <!-- Team section loaded from partial -->
+      <div data-include="partials/time.html"></div>
+
+      <!-- Contact/footer loaded from partial -->
+      <div data-include="partials/contato.html"></div>
+      <!-- Floating WhatsApp button -->
+      <div data-include="partials/whatsapp-fab.html"></div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
