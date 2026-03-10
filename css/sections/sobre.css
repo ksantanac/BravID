@@ -1,0 +1,19 @@
+/* Sobre section styles */
+
+.bg-sobre-light{background:#ececec}
+.sobre-card{background:#e9e9e9}
+.sobre-pillar-glyph{display:inline-block;color:hsl(var(--primary));font-size:1.7rem;line-height:1;margin-bottom:0.55rem;font-weight:700}
+.sobre-card.card-pop{transition:transform 1s cubic-bezier(.16,.8,.24,1), box-shadow 1s cubic-bezier(.16,.8,.24,1)}
+.sobre-symbol{width:96px;height:96px;object-fit:contain;opacity:0.9;mix-blend-mode:multiply}
+.sobre-title{font-family:'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;font-size:2.15rem;line-height:1.12;font-weight:800;text-transform:uppercase;color:hsl(var(--primary));letter-spacing:0.01em}
+.sobre-copy{font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;font-size:1.2rem;line-height:1.62;color:rgba(0,0,0,0.9)}
+
+@media (max-width:1024px){
+  .sobre-title{font-size:2rem}
+  .sobre-copy{font-size:1.1rem}
+}
+
+@media (max-width:768px){
+  .sobre-title{font-size:1.6rem}
+  .sobre-copy{font-size:1rem}
+}

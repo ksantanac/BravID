@@ -1,19 +1,56 @@
-<section id="time" class="py-24 bg-background">
+<section id="time" class="time-section py-24">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl md:text-5xl font-heading font-bold text-foreground text-center mb-16"><span class="text-primary">TIME</span></h2>
-    <div class="max-w-2xl mx-auto text-center">
-      <div class="w-32 h-32 rounded-full bg-graphite mx-auto mb-6 flex items-center justify-center"><span class="text-4xl font-heading font-bold text-primary">FI</span></div>
-      <h3 class="text-2xl font-heading font-bold text-foreground mb-2">FABIO IPPOLITO</h3>
-      <p class="text-muted-foreground font-body mb-6">Executivo sênior de Marketing e Negócios com mais de 25 anos de experiência.</p>
-      <div class="flex flex-wrap gap-3 justify-center">
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">EssilorLuxottica</span>
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">Ray-Ban</span>
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">Oakley</span>
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">Paramount</span>
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">Fox</span>
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">Universal Music</span>
-        <span class="px-4 py-2 bg-graphite text-muted-foreground font-body text-sm rounded-full border border-border card-pop">Sony</span>
-      </div>
+    <h2 class="time-heading text-center">TIME</h2>
+
+    <div class="time-grid">
+      <article>
+        <h3 class="time-name">FABIO IPPOLITO</h3>
+
+        <p class="time-copy">
+          Executivo senior de Marketing e Negocios com mais de 25 anos de experiencia em empresas globais de consumo,
+          otico, esporte, entretenimento e tecnologia.
+        </p>
+
+        <p class="time-copy">
+          Atuacao em branding, estrategia de portfolio, go-to-market e crescimento de receita,
+          liderando marcas iconicas e projetos de expansao internacional em ambientes B2C, B2B e B2B2C.
+        </p>
+
+        <p class="time-copy">
+          Experiencia em gestao de P&amp;L, desenvolvimento de negocios e lideranca de times multidisciplinares,
+          conectando estrategia global a execucao local com foco em resultado.
+        </p>
+
+        <p class="time-copy">
+          Carreira construida em empresas como <strong>EssilorLuxottica</strong>, <strong>Ray-Ban</strong>,
+          <strong>Oakley</strong>, <strong>Paramount</strong>, <strong>Fox</strong>,
+          <strong>Universal Music</strong> e <strong>Sony</strong>.
+        </p>
+
+        <p class="time-copy mb-0">
+          Pos-graduado em Marketing e Gestao de Negocios (ESPM), graduado em Publicidade e Propaganda.
+        </p>
+
+        <div class="time-logos" aria-label="Empresas da trajetoria profissional">
+          <span class="time-logo-chip card-pop">EssilorLuxottica</span>
+          <span class="time-logo-chip card-pop">Ray-Ban</span>
+          <span class="time-logo-chip card-pop">Oakley</span>
+          <span class="time-logo-chip card-pop">Paramount</span>
+          <span class="time-logo-chip card-pop">20th Century Fox</span>
+          <span class="time-logo-chip card-pop">Universal Music</span>
+          <span class="time-logo-chip card-pop">Sony</span>
+        </div>
+      </article>
+
+      <aside class="time-portrait-frame" aria-label="Retrato do executivo">
+        <img
+          src="../assets/foto_fabio.jpeg"
+          alt="Fabio Ippolito"
+          class="time-portrait-image"
+          onerror="if(!this.dataset.retryPath){this.dataset.retryPath='1';this.src='./assets/foto_fabio.jpeg';return;}this.style.display='none';this.nextElementSibling.style.display='flex';"
+        />
+        <div class="time-portrait-fallback">FI</div>
+      </aside>
     </div>
   </div>
 </section>

@@ -1,0 +1,131 @@
+/* Time section styles */
+
+.time-section {
+  background: #000;
+}
+
+.time-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 2.6rem;
+  align-items: stretch;
+}
+
+.time-heading {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin-bottom: 2.2rem;
+}
+
+.time-name {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  text-align: center;
+  margin-bottom: 1.45rem;
+}
+
+.time-copy {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: clamp(0.98rem, 1.2vw, 1.18rem);
+  line-height: 1.48;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 1.1rem;
+}
+
+.time-copy strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.time-logos {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+}
+
+.time-logo-chip {
+  padding: 0.45rem 0.78rem;
+  border-radius: 999px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--graphite));
+  color: hsl(var(--primary));
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.time-logo-chip:hover,
+.time-logo-chip:focus {
+  color: #fff;
+  border-color: rgba(255, 140, 0, 0.72);
+}
+
+.time-portrait-frame {
+  position: relative;
+  border: 2px solid hsl(var(--primary));
+  background: #dcdcdc;
+  min-height: 470px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.time-portrait-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 1;
+}
+
+.time-portrait-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.04em;
+  user-select: none;
+  z-index: 0;
+}
+
+@media (max-width: 1080px) {
+  .time-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .time-heading {
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+
+  .time-name {
+    margin-bottom: 1rem;
+  }
+
+  .time-portrait-frame {
+    min-height: 420px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}

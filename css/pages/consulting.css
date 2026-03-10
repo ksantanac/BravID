@@ -1,0 +1,212 @@
+/* Consulting page specific overrides */
+
+.service-detail-shell--consulting {
+  max-width: 1360px;
+  padding-top: 2.2rem;
+}
+
+.consulting-page .service-detail-hero--consulting {
+  min-height: 64vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+}
+
+.consulting-page .service-headline-row {
+  grid-template-columns: 1fr;
+  gap: 1.35rem;
+  justify-items: center;
+  max-width: 1120px;
+}
+
+.consulting-page .service-headline-copy {
+  text-align: center;
+  max-width: 1060px;
+  padding-top: 0;
+}
+
+.consulting-page .service-logo-wrap--consulting {
+  position: relative;
+  padding: 0;
+  margin-top: -1.05rem;
+  margin-bottom: 0.8rem;
+}
+
+.consulting-page .service-logo-wrap--consulting::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(640px, 152%);
+  height: min(280px, 82%);
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background:
+    radial-gradient(ellipse at center, rgba(255, 167, 71, 0.82) 0%, rgba(255, 167, 71, 0.36) 42%, rgba(255, 167, 71, 0.08) 66%, rgba(255, 167, 71, 0) 84%),
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.08) 48%, rgba(255, 255, 255, 0) 76%);
+  filter: blur(14px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.consulting-page .service-logo-wrap--consulting::after {
+  content: '';
+  position: absolute;
+  left: 52%;
+  top: 56%;
+  width: min(520px, 132%);
+  height: min(150px, 44%);
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: radial-gradient(ellipse at center, rgba(255, 132, 23, 0.58) 0%, rgba(255, 132, 23, 0.16) 58%, rgba(255, 132, 23, 0) 86%);
+  filter: blur(12px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.consulting-page .service-detail-logo {
+  position: relative;
+  z-index: 1;
+  width: min(360px, 88%);
+  margin: 0 auto;
+  filter: drop-shadow(0 16px 34px rgba(255, 196, 122, 0.34)) drop-shadow(0 20px 34px rgba(0, 0, 0, 0.44));
+}
+
+.consulting-page .service-detail-quote {
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin-bottom: 1.05rem;
+}
+
+.consulting-page .service-detail-lead {
+  font-size: 1.05rem;
+  line-height: 1.52;
+  max-width: 1120px;
+  margin: 0 auto 1rem;
+}
+
+.consulting-page .service-detail-closing {
+  font-size: 1.1rem;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.97);
+}
+
+.consulting-page .consulting-pillar-grid {
+  margin-top: 0.5rem;
+  gap: 0.9rem;
+  max-width: 1120px;
+}
+
+.consulting-page .consulting-pillar-card {
+  min-height: 122px;
+  border-radius: 14px;
+  animation: consulting-card-float 4.8s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.consulting-page .consulting-pillar-card:nth-child(2) {
+  animation-delay: 0.22s;
+}
+
+.consulting-page .consulting-pillar-card:nth-child(3) {
+  animation-delay: 0.44s;
+}
+
+.consulting-page .consulting-pillar-card:hover,
+.consulting-page .consulting-pillar-card:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes consulting-card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+  }
+  50% {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.34), 0 0 16px rgba(255, 140, 0, 0.18);
+  }
+}
+
+.consulting-page .consulting-pillar-front {
+  min-height: 122px;
+}
+
+.consulting-page .consulting-pillar-title {
+  font-size: 1rem;
+}
+
+.consulting-page .consulting-pillar-icon {
+  font-size: 1.55rem;
+}
+
+.consulting-page .consulting-pillar-details {
+  padding: 0.82rem 0.88rem;
+}
+
+.consulting-page .consulting-pillar-details li {
+  font-size: 0.9rem;
+  line-height: 1.38;
+}
+
+@media (max-width: 980px) {
+  .service-detail-shell--consulting {
+    padding-top: 1.2rem;
+  }
+
+  .consulting-page .service-detail-hero--consulting {
+    min-height: 0;
+    display: block;
+    margin-bottom: 1.1rem;
+  }
+
+  .consulting-page .service-detail-logo {
+    width: min(300px, 86%);
+  }
+
+  .consulting-page .service-logo-wrap--consulting::before {
+    width: min(440px, 128%);
+    height: min(220px, 76%);
+    filter: blur(10px);
+    opacity: 0.96;
+  }
+
+  .consulting-page .service-logo-wrap--consulting::after {
+    width: min(360px, 112%);
+    height: min(126px, 40%);
+    filter: blur(10px);
+    opacity: 0.9;
+  }
+
+  .consulting-page .service-detail-quote {
+    font-size: 1.34rem;
+  }
+
+  .consulting-page .service-detail-lead {
+    font-size: 1rem;
+    line-height: 1.52;
+  }
+
+  .consulting-page .service-detail-closing {
+    font-size: 1.04rem;
+  }
+
+  .consulting-page .consulting-pillar-card {
+    min-height: 0;
+    animation: none;
+  }
+
+  .consulting-page .consulting-pillar-front {
+    min-height: 90px;
+  }
+
+  .consulting-page .consulting-pillar-title {
+    font-size: 0.98rem;
+  }
+
+  .consulting-page .consulting-pillar-details li {
+    font-size: 0.93rem;
+  }
+}
