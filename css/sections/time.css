@@ -78,6 +78,7 @@
   position: relative;
   border: 2px solid hsl(var(--primary));
   background: #dcdcdc;
+  width: 100%;
   min-height: 470px;
   height: 100%;
   overflow: hidden;
@@ -106,6 +107,7 @@
   letter-spacing: 0.04em;
   user-select: none;
   z-index: 0;
+  background: #dcdcdc;
 }
 
 @media (max-width: 1080px) {
@@ -125,7 +127,12 @@
 
   .time-portrait-frame {
     min-height: 420px;
+    width: min(100%, 520px);
     max-width: 520px;
     margin: 0 auto;
+  }
+
+  .time-portrait-fallback {
+    font-size: clamp(3.4rem, 10vw, 5.8rem);
   }
 }

@@ -155,7 +155,7 @@
 
   .consulting-page .consulting-pillar-card {
     min-height: 0;
-    animation: none;
+    animation: consulting-card-float 6.4s ease-in-out infinite;
   }
 
   .consulting-page .consulting-pillar-front {

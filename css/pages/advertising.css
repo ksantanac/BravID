@@ -169,7 +169,7 @@
 
   .advertising-page .advertising-pillar-grid .consulting-pillar-card {
     min-height: 0;
-    animation: none;
+    animation: advertising-card-float 6.4s ease-in-out infinite;
   }
 
   .advertising-page .advertising-pillar-grid .consulting-pillar-front {

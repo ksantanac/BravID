@@ -44,10 +44,10 @@
 
       <aside class="time-portrait-frame" aria-label="Retrato do executivo">
         <img
-          src="../assets/foto_fabio.jpeg"
+          src="assets/foto_fabio.jpeg"
           alt="Fábio Ippolito"
           class="time-portrait-image"
-          onerror="if(!this.dataset.retryPath){this.dataset.retryPath='1';this.src='./assets/foto_fabio.jpeg';return;}this.style.display='none';this.nextElementSibling.style.display='flex';"
+          onerror="if(!this.dataset.retryPath){this.dataset.retryPath='1';this.src='./assets/foto_fabio.jpeg';return;}if(this.dataset.retryPath==='1'){this.dataset.retryPath='2';this.src='../assets/foto_fabio.jpeg';return;}this.style.display='none';this.nextElementSibling.style.display='flex';"
         />
         <div class="time-portrait-fallback">FI</div>
       </aside>
