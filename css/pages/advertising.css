@@ -146,7 +146,7 @@
   }
 
   .advertising-page .service-logo-wrap--advertising {
-    transform: translateY(-10px);
+    transform: translateY(0);
   }
 
   .advertising-page .service-detail-quote {
