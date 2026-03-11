@@ -31,39 +31,9 @@
   padding: 0;
   margin-top: -1.05rem;
   margin-bottom: 0.8rem;
+  transform: translateY(-18px);
 }
 
-.advertising-page .service-logo-wrap--advertising::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 56%;
-  width: min(700px, 166%);
-  height: min(340px, 102%);
-  transform: translate(-50%, -50%);
-  border-radius: 999px;
-  background:
-    radial-gradient(ellipse at center, rgba(255, 167, 71, 0.82) 0%, rgba(255, 167, 71, 0.36) 42%, rgba(255, 167, 71, 0.08) 66%, rgba(255, 167, 71, 0) 84%),
-    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.08) 48%, rgba(255, 255, 255, 0) 76%);
-  filter: blur(14px);
-  z-index: 0;
-  pointer-events: none;
-}
-
-.advertising-page .service-logo-wrap--advertising::after {
-  content: '';
-  position: absolute;
-  left: 52%;
-  top: 68%;
-  width: min(600px, 148%);
-  height: min(210px, 62%);
-  transform: translate(-50%, -50%);
-  border-radius: 999px;
-  background: radial-gradient(ellipse at center, rgba(255, 132, 23, 0.58) 0%, rgba(255, 132, 23, 0.16) 58%, rgba(255, 132, 23, 0) 86%);
-  filter: blur(12px);
-  z-index: 0;
-  pointer-events: none;
-}
 
 .advertising-page .service-detail-logo {
   position: relative;
@@ -175,20 +145,8 @@
     width: min(300px, 86%);
   }
 
-  .advertising-page .service-logo-wrap--advertising::before {
-    top: 58%;
-    width: min(500px, 146%);
-    height: min(270px, 92%);
-    filter: blur(10px);
-    opacity: 0.96;
-  }
-
-  .advertising-page .service-logo-wrap--advertising::after {
-    top: 69%;
-    width: min(420px, 126%);
-    height: min(156px, 52%);
-    filter: blur(10px);
-    opacity: 0.9;
+  .advertising-page .service-logo-wrap--advertising {
+    transform: translateY(-10px);
   }
 
   .advertising-page .service-detail-quote {
